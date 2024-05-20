@@ -1,6 +1,6 @@
 @ApiSmarterByPractice_HostAddress = http://localhost:5049
 
-GET {{ApiSmarterByPractice_HostAddress}}/weatherforecast/
+GET {{ApiSmarterByPractice_HostAddress}}/api/UserScores/
 Accept: application/json
 
 ###

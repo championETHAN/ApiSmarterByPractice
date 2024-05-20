@@ -1,4 +1,6 @@
 using ApiSmarterByPractice.Data;
+using ApiSmarterByPractice.Interfaces;
+using ApiSmarterByPractice.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddScoped<IUserScoresRepository, UserScoresRepository>();
 builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("SmarterByPracticeConnectionString"));

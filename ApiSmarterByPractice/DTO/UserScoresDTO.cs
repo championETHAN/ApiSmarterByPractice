@@ -1,8 +1,7 @@
-﻿namespace ApiSmarterByPractice.Models
+﻿namespace ApiSmarterByPractice.DTO
 {
-    public class UserScores
+    public class UserScoresDTO
     {
-        public int Id { get; set; }
         public DateTime InputDate { get; set; }
         public int ReactionTime { get; set; }
         public int SequenceMemory { get; set; }
